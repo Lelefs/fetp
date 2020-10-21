@@ -1,0 +1,132 @@
+.main-content-cadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+  min-height: 100%;
+  height: fit-content;
+
+  .img-icone {
+    margin-right: auto;
+  }
+
+  .img-fundo {
+    background: url('../../../assets/img/bg-front.png') no-repeat center top;
+    width: 100%;
+    height: 70px;
+  }
+}
+
+.form-cadastro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: fit-content;
+
+  .fildsets {
+    display: flex;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  fieldset {
+    border: 0;
+    width: 360px;
+    margin: 0 auto;
+
+    & + fieldset {
+      margin-left: 34px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      & + fieldset {
+        margin: 20px auto 0;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 29px;
+    letter-spacing: -0.2px;
+    color: #585859;
+    margin-bottom: 30px;
+  }
+
+  legend {
+    font-weight: bold;
+    font-size: 16px;
+    color: #585859;
+  }
+
+  button {
+    background-color: #7626ff;
+    box-shadow: 0px 10px 39px #867FF67A;
+    border-radius: 36px;
+    width: 360px;
+    height: 60px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    transition: filter 0.2s;
+    font-weight: bold;
+    margin: 30px auto 26px;
+  }
+
+  .logar-se {
+    margin: 0 auto;
+    letter-spacing: -0.11px;
+    color: #0077C5;
+  }
+}
+
+.div-input {
+  background-color: #fff;
+  border: 1px solid #c2c2c2;
+  border-radius: 6px;
+  padding: 10px 10px 10px 20px;
+  display: flex;
+  align-items: center;
+  color: #cad0dc;
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 10px;
+
+  input {
+    flex: 1;
+    background: transparent;
+    border: 0;
+    color: #585859;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+
+  img {
+    cursor: pointer;
+    width: 20px;
+    margin-left: 10px;
+  }
+}
+
+.div-dois-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 175px);
+  grid-gap: 10px;
+
+  &.primeiro-menor {
+    grid-template-columns: 99px 1fr;
+  }
+}
+
+.bg-image {
+  width: 100%;
+  max-width: 500px;
+}

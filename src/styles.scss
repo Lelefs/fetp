@@ -1,0 +1,49 @@
+* {
+  outline: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+}
+
+body, input, button, textarea {
+  font-family: 'Mukta Malar', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  cursor: pointer;
+  transition: filter 0.2s;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  &:enabled:hover {
+    filter: brightness(0.8);
+  }
+}
+
+input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }

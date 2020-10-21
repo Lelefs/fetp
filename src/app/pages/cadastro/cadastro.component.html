@@ -1,0 +1,61 @@
+<main class="main-content-cadastro">
+  <img src="assets/img/front-test-logo.svg" alt="Logo" class="img-icone">
+
+  <form action="" class="form-cadastro" [formGroup]="formularioCadastro" (ngSubmit)="fazerCadastro()">
+    <h1>Cadastrar</h1>
+
+    <div class="fildsets">
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <div class="div-input">
+          <input type="text" placeholder="Nome/Razão Social" formControlName="nome" name="nome" />
+        </div>
+        <div class="div-dois-inputs">
+          <div class="div-input">
+            <input type="text" placeholder="CPF" mask="000.000.000-00" formControlName="cpf" name="cpf" />
+          </div>
+          <div class="div-input">
+            <input
+              type="text"
+              placeholder="Telefone"
+              mask="{{formularioCadastro.value.telefone.length <= 10 ? '(00) 0000-00009' : '(00) 00000-0000'}}"
+              formControlName="telefone"
+              name="telefone"
+            />
+          </div>
+        </div>
+        <div class="div-input">
+          <input type="email" placeholder="E-mail" formControlName="email" name="email" />
+        </div>
+        <div class="div-input">
+          <input [type]="inputComoPassword ? 'password' : 'text'" type="password" placeholder="Senha" formControlName="senha" name="senha" />
+          <img src="assets/img/eye.svg" alt="Mostrar senha" (click)="inputComoPassword = !inputComoPassword">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <div class="div-dois-inputs primeiro-menor">
+          <div class="div-input">
+            <input type="text" placeholder="CEP" mask="00000-000" formControlName="cep" name="cep" />
+          </div>
+          <div class="div-input">
+            <input type="text" placeholder="Logradouro" formControlName="logradouro" name="logradouro" />
+          </div>
+        </div>
+        <div class="div-dois-inputs primeiro-menor">
+          <div class="div-input">
+            <input type="number" placeholder="Número" formControlName="numero" name="numero" />
+          </div>
+          <div class="div-input">
+            <input type="text" placeholder="Bairro" formControlName="bairro" name="bairro" />
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <button [disabled]="!formularioCadastro.valid">Cadastrar</button>
+    <a [routerLink]="['/']" class="logar-se">Já tem uma conta? Faça login</a>
+  </form>
+  <div class="img-fundo"></div>
+</main>

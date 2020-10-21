@@ -1,0 +1,17 @@
+<main class="main-content-login">
+  <img src="assets/img/front-test-logo.svg" alt="Logo" class="img-icone">
+  <form class="form-login" [formGroup]="formularioLogin" (ngSubmit)="fazerLogin()" >
+    <h1>Entrar</h1>
+    <div class="div-input">
+      <input type="email" placeholder="E-mail" formControlName="email" name="email" />
+    </div>
+    <div class="div-input">
+      <input [type]="inputComoPassword ? 'password' : 'text'" placeholder="Senha" formControlName="senha" name="senha" />
+      <img src="assets/img/eye.svg" alt="Mostrar senha" (click)="inputComoPassword = !inputComoPassword">
+    </div>
+    <a href="" class="esqueceu-senha">ESQUECEU A SENHA?</a>
+    <button [disabled]="!formularioLogin.valid">Entrar</button>
+    <a [routerLink]="['/cadastro']" class="cadastrar-se">Não tem uma conta? Cadastre-se</a>
+  </form>
+  <div class="img-fundo"></div>
+</main>
