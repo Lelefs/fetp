@@ -1,27 +1,26 @@
+![Logo FETP](https://imgs-readme.s3-sa-east-1.amazonaws.com/front-test-logo.png)
+
+[![Framework](https://badgen.net/badge/Framework/Angular/green)](https://github.com/angular/angular-cli)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 # Fetp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
+Essa aplicação de teste foi feita para realizar o cadastro de usuários e login.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 🚀 Rodar a aplicação
 
-## Code scaffolding
+* Instale as dependências:
+>    $ npm install
+* Rode o projeto em ambiente de desenvolvimento:
+>    $ npm start
+* Faça o build do projeto
+>    $ npm build
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## ✒️ Autores
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* **Leandro Finochio**
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Obrigado por me visitar e bora codar!
